@@ -9,12 +9,8 @@ interface ICounterState{
 }
 export default class Counter extends React.Component<ICounterProps,ICounterState> {
   constructor(props){
-    super(props);
-    this.state=
-    {
-      count:0
-    };
-
+    super(props);    
+    this.state={count:0};
   }
 
   private increment(){
@@ -29,8 +25,8 @@ export default class Counter extends React.Component<ICounterProps,ICounterState
     return (
       <div>
         <h1>{this.state.count}</h1>
-        <button onClick={this.increment}>Increment</button>
-        <button onClick={this.decrement}>Decrement</button>
+        <button onClick={()=>{this.increment()}}>+</button>
+        <button onClick={()=>{this.decrement()}}>-</button>
       </div>
     );
   }
