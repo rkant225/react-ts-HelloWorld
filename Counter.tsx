@@ -25,8 +25,8 @@ export default class Counter extends React.Component<ICounterProps,ICounterState
     return (
       <div>
         <h1>{this.state.count}</h1>
-        <button onClick={()=>{this.increment()}}>+</button>
-        <button onClick={()=>{this.decrement()}}>-</button>
+        <button onClick={()=>{this.increment()}}>Incriment</button>
+        <button onClick={()=>{this.decrement()}}>Decrement</button>
       </div>
     );
   }
