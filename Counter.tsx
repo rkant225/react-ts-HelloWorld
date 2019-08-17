@@ -7,6 +7,8 @@ interface ICounterProps{
 interface ICounterState{
   count: number
 }
+
+
 export default class Counter extends React.Component<ICounterProps,ICounterState> {
   constructor(props){
     super(props);    
